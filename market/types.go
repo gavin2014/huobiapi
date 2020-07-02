@@ -18,6 +18,8 @@ type subData struct {
 type reqData struct {
 	Req string `json:"req"`
 	ID  string `json:"id"`
+	From  int64 `json:"from"`
+	To  int64 `json:"to"`
 }
 
 type jsonChan = chan *simplejson.Json
